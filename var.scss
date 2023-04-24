@@ -1,0 +1,45 @@
+// Fonts 
+$font-web: 'Roboto', sans-serif;
+// Size 
+$paragraf-small: 18px;
+// $paragraf-medium: 20px;
+$h3-size: 36px;
+//$h4-size: 32px;
+$h5-size: 24px;
+// Color 
+$color-green: #00E3A5;
+$color-heading: #f5fbf2;
+$color-paragraf-smal: #80AB9E;
+$color-howDoWeWork: rgba(0, 221, 155, 0.03);
+// Border 
+$borderRadius-AboutUs: 15px;
+$borderRadius-button: 5px;
+$borderbottom: 1px;
+// Mixin 
+@mixin -h3 {
+    font-family: $font-web;
+    font-size: $h3-size;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+    color: $color-heading;
+}
+@mixin -h5 {
+    font-family: $font-web;
+    font-size: $h5-size;
+    font-weight: 700;
+    line-height: 32px;
+    color: white;
+}
+@mixin -p-small {
+    font-family: $font-web;
+    font-size: $paragraf-small;
+    font-weight: 400;
+    line-height: 32px;
+    color: $color-paragraf-smal;
+}
+@mixin btn($background-color, $color) {
+    background-color: $background-color;
+    color: $color;
+    border-radius: $borderRadius-button;
+} 
