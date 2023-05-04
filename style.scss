@@ -1,1 +1,77 @@
 @import "var";
+@import "reset";
+
+.webContainer {
+    font-family: $font-web;
+    background-color: #09251E;
+    width: 100%;
+
+    header {
+        display: flex;
+        margin: 90px 0% 0 8%;
+        width: 92%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 62px 0 52px 0;
+
+        h1 {
+            display: flex;
+            width: 35%;
+            font-size: 45px; 
+            line-height: 36.4px;
+            color: $color-heading;
+             
+            span {
+                color: $color-green;
+            }
+        }
+        nav {
+            width: 40%;
+            
+            ul {
+                display: flex;
+                justify-content: space-around;
+            
+                li {
+                    list-style: none;
+                    position: relative;
+
+                    a {
+                    font-size: 18px;
+                    line-height: 21.09px;
+                    color: $color-heading;
+                    }
+                    a:after {
+                        content: '';
+                        width: 0%;
+                        height: 2px;
+                        background-color: $color-green;
+                        position: absolute;
+                        bottom: -8px;
+                        left: 0;
+                        border-radius: 29px;
+                    }
+                    a:hover::after {
+                        width: 60%;
+                        transition: all 0.3s;
+                        position: absolute;
+                    } 
+                } 
+            }
+        }
+        div {
+            width: 15%;
+            margin-left: 5%;
+
+            button {
+                @include btn (#09251E, white);
+                border: 1px solid $color-green;
+                padding: 24px 45px;
+                font-size: $paragraf-small;
+                font-weight: 900;
+                line-height: 22px;
+            }
+        }
+    }
+}
+// przycisk, podkrslenie w nav i dac na koncu comit bez wypychania go 
