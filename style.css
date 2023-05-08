@@ -52,7 +52,11 @@
   left: 0;
   border-radius: 29px;
 }
+.webContainer header nav ul li a:hover {
+  color: #00E3A5;
+}
 .webContainer header nav ul li a:hover::after {
+  color: red;
   width: 60%;
   transition: all 0.3s;
   position: absolute;

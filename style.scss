@@ -51,7 +51,11 @@
                         left: 0;
                         border-radius: 29px;
                     }
+                    a:hover {
+                        color: $color-green;
+                    }
                     a:hover::after {
+                        color: red;
                         width: 60%;
                         transition: all 0.3s;
                         position: absolute;
