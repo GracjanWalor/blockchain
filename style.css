@@ -1,1 +1,77 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.webContainer {
+  font-family: "Roboto", sans-serif;
+  background-color: #09251E;
+  width: 100%;
+}
+.webContainer header {
+  display: flex;
+  margin: 90px 0% 0 8%;
+  width: 92%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 62px 0 52px 0;
+}
+.webContainer header h1 {
+  display: flex;
+  width: 35%;
+  font-size: 45px;
+  line-height: 36.4px;
+  color: #f5fbf2;
+}
+.webContainer header h1 span {
+  color: #00E3A5;
+}
+.webContainer header nav {
+  width: 40%;
+}
+.webContainer header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+.webContainer header nav ul li {
+  list-style: none;
+  position: relative;
+}
+.webContainer header nav ul li a {
+  font-size: 18px;
+  line-height: 21.09px;
+  color: #f5fbf2;
+}
+.webContainer header nav ul li a:after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #00E3A5;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  border-radius: 29px;
+}
+.webContainer header nav ul li a:hover {
+  color: #00E3A5;
+}
+.webContainer header nav ul li a:hover::after {
+  color: red;
+  width: 60%;
+  transition: all 0.3s;
+  position: absolute;
+}
+.webContainer header div {
+  width: 15%;
+  margin-left: 5%;
+}
+.webContainer header div button {
+  background-color: #09251E;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #00E3A5;
+  padding: 24px 45px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 22px;
+}/*# sourceMappingURL=style.css.map */
