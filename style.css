@@ -6,6 +6,7 @@
 .webContainer {
   font-family: "Roboto", sans-serif;
   width: 100%;
+  background-color: #0A1619;
 }
 .webContainer header {
   display: flex;
@@ -74,4 +75,17 @@
   font-size: 18px;
   font-weight: 900;
   line-height: 22px;
+}
+.webContainer section {
+  background-color: #091D18;
+  opacity: 0.5;
+  border-radius: 129.482px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 144px;
+  padding: 120px 101px 128px 101px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
