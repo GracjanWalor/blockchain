@@ -8,7 +8,7 @@
 
     header {
         display: flex;
-        margin: 90px 0% 0 8%;
+        margin: 90px 0% 0 0;
         width: 100%;
         align-items: center;
         justify-content: space-between;
@@ -21,6 +21,7 @@
             font-size: 45px; 
             line-height: 36.4px;
             color: $color-heading;
+            margin-left: 8%;
              
             span {
                 color: $color-green;

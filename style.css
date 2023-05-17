@@ -10,7 +10,7 @@
 }
 .webContainer header {
   display: flex;
-  margin: 90px 0% 0 8%;
+  margin: 90px 0% 0 0;
   width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -23,6 +23,7 @@
   font-size: 45px;
   line-height: 36.4px;
   color: #f5fbf2;
+  margin-left: 8%;
 }
 .webContainer header h1 span {
   color: #00E3A5;
