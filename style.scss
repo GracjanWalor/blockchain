@@ -6,6 +6,7 @@
     width: 100%;
     background-color: #0A1619;;
 
+
     header {
         display: flex;
         margin: 0 0 130px 0;
@@ -79,7 +80,7 @@
             }
         }
     }
-    section {
+    .baners {
         background-color: #091D18;
         opacity: 0.5;
         border-radius: 129.482px;
@@ -92,4 +93,87 @@
         justify-content: space-between;
         align-items: center;
     }
+    .community {
+        background-image: url(./Assets/Community/main-background\ |\ Community.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        padding-bottom: 100px;                                             
+        
+
+        h3 {
+            @include -h3;
+            padding-top: 61px;
+            margin-bottom: 51px;
+        }
+
+        .community-carousel {
+            background-color: rgba(0, 221, 156, 0.1);
+            border-radius: 320px;
+            padding-top: 85px;
+            padding-bottom: 65px;
+            width: 75%;                                                     
+            display: flex;
+            align-items: center;
+            margin: 0 15% 100px 10%;                                        
+            position: relative;
+           
+            
+
+            .btn-left {
+                background-color: rgba(252, 252, 252, 0);
+                border-style: none;
+                position: absolute;
+                transform: translateX(-35px);
+            }
+
+            .btn-right {
+                background-color: rgba(252, 252, 252, 0);
+                border-style: none;
+                position: absolute;
+                right: 0;
+                transform: translateX(35px);
+            }
+            .face-box {
+                display: flex;
+                position: relative;
+                margin-left: 165px;
+                
+                .green-circle { 
+                    background-color: $color-green;
+                    width: 199.12px;
+                    height: 194.28px;
+                    border-radius: 100px;
+                } 
+                img {
+                    position: absolute;
+                    right: 7.5px;
+                    bottom: 7.5px;
+                }
+            } 
+            .text-box {
+                @include -p-small;
+                font-weight: 700;
+                text-align: justify;
+                width: 45%;                             
+                margin-left: 95px;
+                margin-top: 50px;
+                position: relative;
+                z-index: 1;
+                
+                p:first-child {
+                    font-weight: 300;
+                    margin-bottom: 35px;
+                   
+                }
+
+                .quatation {
+                    position: absolute;
+                    top: -81px;
+                    left: -25px;
+                    z-index: -1;
+                }
+            }
+        }
+    }      
 }
