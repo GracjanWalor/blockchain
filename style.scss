@@ -175,5 +175,185 @@
                 }
             }
         }
-    }      
+    } 
+    footer {
+        background-image: url(./Assets/Footer/Background.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        width: 100%; 
+        justify-content: center;
+        
+        
+        .footer__left {
+            display: flex;
+            flex-direction: column;
+            margin-left: 8%;
+            width: 49.5%;
+
+            h4 {
+                font-size: $h4-size;
+                color: $color-heading;
+                font-weight: 400;
+                line-height: 36px;
+                margin-top: 215px; 
+                margin-bottom: 32px; 
+                
+                span {
+                    color: $color-green;
+                }
+            }
+            .footer__left_paragraf-top {
+               @include -p-small; 
+               margin-bottom: 49px; 
+               margin-right: 244px;
+            }
+            .footer__left_container-social-media {
+                
+                h5 {
+                    @include -h5;
+                    color: $color-heading;
+                    font-weight: 500;
+                    margin-bottom: 33px; 
+                }
+
+                .footer__left_container-social-media-icons {
+                    margin-bottom: 70px;
+
+                    .fa {
+                        color: $color-paragraf-small;
+                        font-size: 25px;
+                    }  
+
+                    .fa-facebook-f {
+                        border: 2px solid $color-paragraf-small;
+                        border-radius: 100px;
+                        padding: 9px 15px;
+                    }
+
+                    .fa-twitter {
+                        border: 2px solid $color-paragraf-small;
+                        border-radius: 100px;
+                        padding: 9px 10px;
+                        margin-left: 23px; 
+                    }
+
+                    .fa-instagram {
+                        border: 2px solid $color-paragraf-small;
+                        border-radius: 100px;
+                        padding: 9px 10px;
+                        margin-left: 23px;
+                    }
+
+                    i:hover {
+                        color: $color-green;
+                        border-color: $color-green;
+                    }
+                } 
+            }
+            .footer__left_paragraf-bottom { 
+                font-family: $font-web;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 36px;
+                color: $color-paragraf-small;
+
+            }
+        }
+        .footer__center {   
+            width: 1%;
+            max-width: 1px;
+            border-right: 1px solid #ffffff52;
+            margin-top: 112px;
+            margin-bottom: 100px;
+        }
+        .footer__right {
+            display: flex;
+            flex-direction: column;
+            margin-right: 8%; 
+            margin-left: 85px; 
+            width: 49.5%;
+
+            h4 { 
+                font-family: $font-web;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 48px;
+                color: $color-heading;
+                margin-top: 124px; 
+                margin-bottom: 38px; 
+                
+            }
+            .footer__right_form {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                margin-bottom: 81px; 
+
+                .footer__right_form-input--email {   
+                    border: 1px solid $color-green;
+                    background-color: #00000000;
+                    border-radius: 5px;
+                    padding: 24px 220px 24px 48px; 
+                    font-size: 18px;
+                    letter-spacing: 0.05em;
+                    line-height: 22px;
+                }
+
+                .footer__right_form-input--submit {   
+                    border: 1px solid $color-green;
+                    background-color: $color-green;
+                    border-radius: 5px;
+                    padding: 24px 65px;
+                    font-size: $paragraf-small;
+                    font-weight: 900;
+                    color: #0D0D0D;
+                    line-height: 22px;
+                    letter-spacing: 0.05em;
+                    margin-left: -3%; 
+                    
+                }
+            }
+            .footer__right_line{
+                border: 1px solid #ffffff52;
+                width: 640px;
+                margin-bottom: 64px; 
+            } 
+            .footer__right_container-links { 
+
+                .footer__right_container-links-left {
+                    display: flex;
+                    flex-direction: column;
+
+                    h5 {
+                        @include -h5;
+                        margin-bottom: 18px;
+                    }
+                    a {
+                        font-size: 20px;
+                        line-height: 50px;
+                        color: $color-paragraf-small;
+                        text-decoration: none;
+                    }
+                }
+                .footer__right_container-links-right {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 224px;
+                    margin-bottom: 126px;
+
+                    h5 {
+                        @include -h5;
+                        margin-bottom: 18px;
+                    }
+                    a {
+                        font-size: 20px;
+                        line-height: 50px;
+                        color: $color-paragraf-small;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }     
 }
