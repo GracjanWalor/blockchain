@@ -175,21 +175,27 @@ button, a {
   left: -25px;
   z-index: -1;
 }
-.webContainer footer {
+.webContainer footer .footer__background-top img {
+  display: block;
+  width: 100%;
+  margin-bottom: -200px;
+  opacity: 0.3;
+}
+.webContainer footer .background-footer {
+  background-image: url(./Assets/Footer/footer_background.png);
+}
+.webContainer footer .background-footer .world-map {
   background-image: url(./Assets/Footer/Background.png);
   background-repeat: no-repeat;
-  background-size: contain;
   display: flex;
-  width: 100%;
-  justify-content: center;
 }
-.webContainer footer .footer__left {
+.webContainer footer .background-footer .world-map .footer__left {
   display: flex;
   flex-direction: column;
   margin-left: 8%;
   width: 49.5%;
 }
-.webContainer footer .footer__left h4 {
+.webContainer footer .background-footer .world-map .footer__left h4 {
   font-size: 34px;
   color: #f5fbf2;
   font-weight: 400;
@@ -197,10 +203,10 @@ button, a {
   margin-top: 215px;
   margin-bottom: 32px;
 }
-.webContainer footer .footer__left h4 span {
+.webContainer footer .background-footer .world-map .footer__left h4 span {
   color: #00E3A5;
 }
-.webContainer footer .footer__left .footer__left_paragraf-top {
+.webContainer footer .background-footer .world-map .footer__left .footer__left_paragraf-top {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -209,7 +215,7 @@ button, a {
   margin-bottom: 49px;
   margin-right: 244px;
 }
-.webContainer footer .footer__left .footer__left_container-social-media h5 {
+.webContainer footer .background-footer .world-map .footer__left .footer__left_container-social-media h5 {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -219,56 +225,57 @@ button, a {
   font-weight: 500;
   margin-bottom: 33px;
 }
-.webContainer footer .footer__left .footer__left_container-social-media .footer__left_container-social-media-icons {
+.webContainer footer .background-footer .world-map .footer__left .footer__left_container-social-media .footer__left_container-social-media-icons {
   margin-bottom: 70px;
 }
-.webContainer footer .footer__left .footer__left_container-social-media .footer__left_container-social-media-icons .fa {
+.webContainer footer .background-footer .world-map .footer__left .footer__left_container-social-media .footer__left_container-social-media-icons .fa {
   color: #80AB9E;
   font-size: 25px;
+  cursor: pointer;
 }
-.webContainer footer .footer__left .footer__left_container-social-media .footer__left_container-social-media-icons .fa-facebook-f {
+.webContainer footer .background-footer .world-map .footer__left .footer__left_container-social-media .footer__left_container-social-media-icons .fa-facebook-f {
   border: 2px solid #80AB9E;
   border-radius: 100px;
   padding: 9px 15px;
 }
-.webContainer footer .footer__left .footer__left_container-social-media .footer__left_container-social-media-icons .fa-twitter {
+.webContainer footer .background-footer .world-map .footer__left .footer__left_container-social-media .footer__left_container-social-media-icons .fa-twitter {
   border: 2px solid #80AB9E;
   border-radius: 100px;
   padding: 9px 10px;
   margin-left: 23px;
 }
-.webContainer footer .footer__left .footer__left_container-social-media .footer__left_container-social-media-icons .fa-instagram {
+.webContainer footer .background-footer .world-map .footer__left .footer__left_container-social-media .footer__left_container-social-media-icons .fa-instagram {
   border: 2px solid #80AB9E;
   border-radius: 100px;
   padding: 9px 10px;
   margin-left: 23px;
 }
-.webContainer footer .footer__left .footer__left_container-social-media .footer__left_container-social-media-icons i:hover {
+.webContainer footer .background-footer .world-map .footer__left .footer__left_container-social-media .footer__left_container-social-media-icons i:hover {
   color: #00E3A5;
   border-color: #00E3A5;
 }
-.webContainer footer .footer__left .footer__left_paragraf-bottom {
+.webContainer footer .background-footer .world-map .footer__left .footer__left_paragraf-bottom {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
   color: #80AB9E;
 }
-.webContainer footer .footer__center {
+.webContainer footer .background-footer .world-map .footer__center {
   width: 1%;
   max-width: 1px;
   border-right: 1px solid rgba(255, 255, 255, 0.3215686275);
   margin-top: 112px;
   margin-bottom: 100px;
 }
-.webContainer footer .footer__right {
+.webContainer footer .background-footer .world-map .footer__right {
   display: flex;
   flex-direction: column;
   margin-right: 8%;
   margin-left: 85px;
   width: 49.5%;
 }
-.webContainer footer .footer__right h4 {
+.webContainer footer .background-footer .world-map .footer__right h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -277,13 +284,13 @@ button, a {
   margin-top: 124px;
   margin-bottom: 38px;
 }
-.webContainer footer .footer__right .footer__right_form {
+.webContainer footer .background-footer .world-map .footer__right .footer__right_form {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   margin-bottom: 81px;
 }
-.webContainer footer .footer__right .footer__right_form .footer__right_form-input--email {
+.webContainer footer .background-footer .world-map .footer__right .footer__right_form .footer__right_form-input--email {
   border: 1px solid #00E3A5;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 5px;
@@ -291,29 +298,34 @@ button, a {
   font-size: 18px;
   letter-spacing: 0.05em;
   line-height: 22px;
+  color: #f5fbf2;
 }
-.webContainer footer .footer__right .footer__right_form .footer__right_form-input--submit {
+.webContainer footer .background-footer .world-map .footer__right .footer__right_form .footer__right_form-input--submit {
   border: 1px solid #00E3A5;
   background-color: #00E3A5;
   border-radius: 5px;
-  padding: 24px 65px;
+  padding: 25px 65px;
   font-size: 18px;
   font-weight: 900;
   color: #0D0D0D;
   line-height: 22px;
   letter-spacing: 0.05em;
   margin-left: -3%;
+  cursor: pointer;
 }
-.webContainer footer .footer__right .footer__right_line {
+.webContainer footer .background-footer .world-map .footer__right .footer__right_line {
   border: 1px solid rgba(255, 255, 255, 0.3215686275);
   width: 640px;
   margin-bottom: 64px;
 }
-.webContainer footer .footer__right .footer__right_container-links .footer__right_container-links-left {
+.webContainer footer .background-footer .world-map .footer__right .footer__right_container-links {
+  display: flex;
+}
+.webContainer footer .background-footer .world-map .footer__right .footer__right_container-links .footer__right_container-links-left {
   display: flex;
   flex-direction: column;
 }
-.webContainer footer .footer__right .footer__right_container-links .footer__right_container-links-left h5 {
+.webContainer footer .background-footer .world-map .footer__right .footer__right_container-links .footer__right_container-links-left h5 {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -321,19 +333,19 @@ button, a {
   color: white;
   margin-bottom: 18px;
 }
-.webContainer footer .footer__right .footer__right_container-links .footer__right_container-links-left a {
+.webContainer footer .background-footer .world-map .footer__right .footer__right_container-links .footer__right_container-links-left a {
   font-size: 20px;
   line-height: 50px;
   color: #80AB9E;
   text-decoration: none;
 }
-.webContainer footer .footer__right .footer__right_container-links .footer__right_container-links-right {
+.webContainer footer .background-footer .world-map .footer__right .footer__right_container-links .footer__right_container-links-right {
   display: flex;
   flex-direction: column;
   margin-left: 224px;
   margin-bottom: 126px;
 }
-.webContainer footer .footer__right .footer__right_container-links .footer__right_container-links-right h5 {
+.webContainer footer .background-footer .world-map .footer__right .footer__right_container-links .footer__right_container-links-right h5 {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -341,7 +353,7 @@ button, a {
   color: white;
   margin-bottom: 18px;
 }
-.webContainer footer .footer__right .footer__right_container-links .footer__right_container-links-right a {
+.webContainer footer .background-footer .world-map .footer__right .footer__right_container-links .footer__right_container-links-right a {
   font-size: 20px;
   line-height: 50px;
   color: #80AB9E;
