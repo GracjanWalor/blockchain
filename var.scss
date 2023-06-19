@@ -4,12 +4,12 @@ $font-web: 'Roboto', sans-serif;
 $paragraf-small: 18px;
 // $paragraf-medium: 20px;
 $h3-size: 36px;
-//$h4-size: 32px;
+$h4-size: 34px;
 $h5-size: 24px;
 // Color 
 $color-green: #00E3A5;
 $color-heading: #f5fbf2;
-$color-paragraf-smal: #80AB9E;
+$color-paragraf-small: #80AB9E;
 $color-howDoWeWork: #00dd9b08;
 // Border 
 $borderRadius-AboutUs: 15px;
@@ -36,7 +36,7 @@ $borderbottom: 1px;
     font-size: $paragraf-small;
     font-weight: 400;
     line-height: 32px;
-    color: $color-paragraf-smal;
+    color: $color-paragraf-small;
 }
 @mixin btn($background-color, $color) {
     background-color: $background-color;
