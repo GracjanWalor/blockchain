@@ -10,7 +10,9 @@ button, a {
 .webContainer {
   font-family: "Roboto", sans-serif;
   width: 100%;
-  background-color: #0A1619;
+  background-color: #0d0d0d;
+  /* About Us */
+  /* Community */
 }
 .webContainer header {
   display: flex;
@@ -93,6 +95,193 @@ button, a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.webContainer .aboutUs {
+  display: flex;
+  width: 100%;
+  margin-bottom: 300px;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./Assets/About_Us/main-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.webContainer .aboutUs .aboutUs__img {
+  width: 87%;
+  display: flex;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 40%;
+  margin-left: 2%;
+  margin-top: 60px;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__text h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: white;
+  color: #f5fbf2;
+  margin-bottom: 25px;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #80AB9E;
+  font-size: 20px;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__text button {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 900;
+  padding: 24px 48px;
+  max-width: 250px;
+  border: 1px solid #00E3A5;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__text > p:first-of-type {
+  margin-bottom: 20px;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__text > :nth-child(3) {
+  margin-bottom: 50px;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes {
+  position: relative;
+  width: 60%;
+  margin-top: 50px;
+  margin-left: -85px;
+  margin-right: 2%;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes .aboutUs__boxes-market .box_blur, .webContainer .aboutUs .aboutUs__img .aboutUs__boxes .aboutUs__boxes-data .box_blur {
+  top: -60px;
+  left: 25px;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes .aboutUs__boxes-money .box_blur, .webContainer .aboutUs .aboutUs__img .aboutUs__boxes .aboutUs__boxes-fast .box_blur {
+  top: -60px;
+  left: 150px;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes img:nth-child(2) {
+  position: absolute;
+  filter: blur(35px);
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes .box {
+  background-color: #020d10;
+  border-radius: 15px;
+  border-image-slice: 1;
+  width: 317px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes .box p {
+  font-size: 22px;
+  color: rgb(189, 243, 255);
+  font-weight: 300;
+  line-height: 34px;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes-market {
+  position: absolute;
+  left: 133px;
+  top: 26px;
+  z-index: 5;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes-market img {
+  padding-top: 51px;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes-market p {
+  margin-top: 24px;
+  margin-bottom: 39px;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes-market-border {
+  position: absolute;
+  border-radius: 15px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) -30.29%, rgba(255, 255, 255, 0.5) 144.92%);
+  width: 319px;
+  height: 231px;
+  top: 25px;
+  left: 132px;
+  z-index: 3;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes .aboutUs__boxes-money {
+  position: absolute;
+  left: 471px;
+  top: 136px;
+  z-index: 5;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes .aboutUs__boxes-money img {
+  padding-top: 51px;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes .aboutUs__boxes-money p {
+  margin-top: 24px;
+  margin-bottom: 39px;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes .aboutUs__boxes-money-border {
+  position: absolute;
+  border-radius: 15px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) -30.29%, rgba(255, 255, 255, 0.5) 144.92%);
+  width: 319px;
+  height: 231px;
+  top: 135px;
+  left: 470px;
+  z-index: 3;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes .aboutUs__boxes-data {
+  position: absolute;
+  left: 235px;
+  height: 228px;
+  top: 276px;
+  z-index: 2;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes .aboutUs__boxes-data img {
+  padding-top: 51px;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes .aboutUs__boxes-data p {
+  margin-top: 24px;
+  margin-bottom: 39px;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes .aboutUs__boxes-data-border {
+  position: absolute;
+  border-radius: 15px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) -30.29%, rgba(255, 255, 255, 0.5) 144.92%);
+  width: 319px;
+  height: 231px;
+  top: 274px;
+  left: 234px;
+  z-index: 1;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes .aboutUs__boxes-fast {
+  position: relative;
+  left: 573px;
+  top: 155px;
+  z-index: 5;
+  height: 228px;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes .aboutUs__boxes-fast img {
+  padding-top: 51px;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes .aboutUs__boxes-fast p {
+  margin-top: 24px;
+  margin-bottom: 39px;
+}
+.webContainer .aboutUs .aboutUs__img .aboutUs__boxes .aboutUs__boxes-fast-border {
+  position: absolute;
+  border-radius: 15px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) -30.29%, rgba(255, 255, 255, 0.5) 144.92%);
+  width: 319px;
+  height: 231px;
+  top: 382px;
+  left: 572px;
+  z-index: 3;
 }
 .webContainer .community {
   background-image: url(./Assets/Community/main-background\ |\ Community.png);

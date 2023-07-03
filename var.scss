@@ -43,3 +43,9 @@ $borderbottom: 1px;
     color: $color;
     border-radius: $borderRadius-button;
 } 
+@mixin -paragraf-about {
+    font-size: 22px;
+    color: rgba(189, 243, 255, 1);
+    font-weight: 300;
+    line-height: 34px;
+}
