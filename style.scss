@@ -4,7 +4,7 @@
 .webContainer {
     font-family: $font-web;
     width: 100%;
-    background-color: #0A1619;
+    background-color: #0d0d0d;
 
     header {
         display: flex;
@@ -98,7 +98,218 @@
         justify-content: space-between;
         align-items: center;
     }
+    /* About Us */
+    .aboutUs {
+        display: flex;
+        width: 100%;
+        margin-bottom: 300px;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./Assets/About_Us/main-background.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+        .aboutUs__img {
+            width: 87%;
+            display: flex;
+            
+            .aboutUs__text {
+                display: flex;
+                flex-direction: column;
+                margin-top: 40px;
+                width: 40%;
+                margin-left: 2%;
+                margin-top: 60px;
+                
+                h3 {
+                    @include -h5;
+                    color: $color-heading;
+                    margin-bottom: 25px;
+                }
 
+                p {
+                    @include -p-small;
+                    font-size: 20px;
+                }
+                
+                button {
+                    @include btn(rgba(0, 0, 0, 0), white);
+                    font-size: 18px;
+                    font-weight: 900;
+                    padding: 24px 48px;
+                    max-width: 250px;
+                    border: 1px solid $color-green;
+                }
+            }  
+            .aboutUs__text > p:first-of-type {
+                margin-bottom: 20px;
+            }
+            .aboutUs__text > :nth-child(3) {
+                margin-bottom: 50px;
+            }
+
+            .aboutUs__boxes {
+                position: relative;
+                width: 60%;
+                margin-top: 50px;
+                margin-left: -85px;
+                margin-right: 2%;
+
+                .aboutUs__boxes-market, .aboutUs__boxes-data {
+
+                    .box_blur {
+                        top: -60px;
+                        left: 25px;
+                    }
+                       
+                }  
+
+                .aboutUs__boxes-money, .aboutUs__boxes-fast {
+
+                    .box_blur {
+                        top: -60px;
+                        left: 150px;
+                    }
+                }
+
+                img:nth-child(2) {
+                    position: absolute;
+                    filter: blur(35px); 
+                }
+
+                .box {
+                    background-color: #020d10;
+                    border-radius: 15px;
+                    border-image-slice: 1;
+                    width: 317px; 
+                    text-align: center;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 4;
+
+                    p {
+                        @include -paragraf-about;
+                    } 
+                }
+
+                &-market {
+                    position: absolute;
+                    left: 133px;
+                    top: 26px;
+                    z-index: 5;
+
+                    img {
+                        padding-top: 51px;
+                    }
+
+                    p {
+                        margin-top: 24px;
+                        margin-bottom: 39px;
+                    }
+                }
+
+                &-market-border {
+                    position: absolute;
+                    border-radius: 15px;
+                    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) -30.29%, rgba(255, 255, 255, 0.5) 144.92%);;
+                    width: 319px;
+                    height: 231px;
+                    top: 25px;
+                    left: 132px;
+                    z-index: 3;
+                }
+
+                .aboutUs__boxes-money {
+                    position: absolute;
+                    left: 471px;
+                    top: 136px;
+                    z-index: 5;
+
+                    img {
+                        padding-top: 51px;
+                    }
+
+                    p {
+                        margin-top: 24px;
+                        margin-bottom: 39px;
+                    }
+            
+                }
+
+                .aboutUs__boxes-money-border {
+                    position: absolute;
+                    border-radius: 15px;
+                    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) -30.29%, rgba(255, 255, 255, 0.5) 144.92%);;
+                    width: 319px;
+                    height: 231px;
+                    top: 135px;
+                    left: 470px;
+                    z-index: 3;
+                }
+
+                .aboutUs__boxes-data {
+                    position: absolute;
+                    left: 235px;
+                    height: 228px; 
+                    top: 276px;
+                    z-index: 2;
+
+                    img {
+                        padding-top: 51px;
+                    }
+
+                    p {
+                        margin-top: 24px;
+                        margin-bottom: 39px;
+                    }
+                }
+
+                .aboutUs__boxes-data-border {
+                    position: absolute;
+                    border-radius: 15px;
+                    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) -30.29%, rgba(255, 255, 255, 0.5) 144.92%);;
+                    width: 319px;
+                    height: 231px;
+                    top: 274px;
+                    left: 234px; 
+                    z-index:1;
+                } 
+
+                .aboutUs__boxes-fast {
+                    position: relative;
+                    left: 573px;
+                    top: 155px;
+                    z-index: 5;
+                    height: 228px;
+                
+
+                    img {
+                        padding-top: 51px;
+                    }
+
+                    p {
+                        margin-top: 24px;
+                        margin-bottom: 39px;
+                    }
+                }
+
+                .aboutUs__boxes-fast-border {
+                    position: absolute;
+                    border-radius: 15px;
+                    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) -30.29%, rgba(255, 255, 255, 0.5) 144.92%);;
+                    width: 319px;
+                    height: 231px;
+                    top: 382px;
+                    left: 572px;
+                    z-index: 3;
+                }
+            }   
+        }      
+    }    
+    /* Community */
     .community {
         background-image: url(./Assets/Community/main-background\ |\ Community.png);
         background-repeat: no-repeat;
