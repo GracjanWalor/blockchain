@@ -11,19 +11,28 @@ button, a {
   font-family: "Roboto", sans-serif;
   width: 100%;
   background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
   /* About Us */
   /* Community */
 }
-.webContainer header {
+.webContainer .New_Header {
+  background-image: url(./Assets/Header/background-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.webContainer .New_Header header {
   display: flex;
-  margin: 0 0 130px 0;
+  margin: 30px 0 180px 0;
   width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 62px 0 52px 0;
-  background-color: #09251E;
+  background-color: rgba(9, 37, 30, 0.2);
+  border-radius: 100px;
 }
-.webContainer header h1 {
+.webContainer .New_Header header h1 {
   display: flex;
   width: 35%;
   font-size: 45px;
@@ -31,26 +40,26 @@ button, a {
   color: #f5fbf2;
   margin-left: 8%;
 }
-.webContainer header h1 span {
+.webContainer .New_Header header h1 span {
   color: #00E3A5;
 }
-.webContainer header nav {
+.webContainer .New_Header header nav {
   width: 40%;
 }
-.webContainer header nav ul {
+.webContainer .New_Header header nav ul {
   display: flex;
   justify-content: space-around;
 }
-.webContainer header nav ul li {
+.webContainer .New_Header header nav ul li {
   list-style: none;
   position: relative;
 }
-.webContainer header nav ul li a {
+.webContainer .New_Header header nav ul li a {
   font-size: 18px;
   line-height: 21.09px;
   color: #f5fbf2;
 }
-.webContainer header nav ul li a:after {
+.webContainer .New_Header header nav ul li a:after {
   content: "";
   width: 0%;
   height: 2px;
@@ -60,28 +69,79 @@ button, a {
   left: 0;
   border-radius: 29px;
 }
-.webContainer header nav ul li a:hover {
+.webContainer .New_Header header nav ul li a:hover {
   color: #00E3A5;
 }
-.webContainer header nav ul li a:hover::after {
+.webContainer .New_Header header nav ul li a:hover::after {
   color: red;
   width: 60%;
   transition: all 0.3s;
   position: absolute;
 }
-.webContainer header div {
+.webContainer .New_Header header div {
   width: 15%;
   margin-left: 5%;
+  margin-right: 8%;
 }
-.webContainer header div button {
-  background-color: #09251E;
+.webContainer .New_Header header div button {
+  background-color: transparent;
   color: white;
   border-radius: 5px;
-  border: 1px solid #00E3A5;
-  padding: 24px 45px;
-  font-size: 18px;
+  letter-spacing: 0.05em;
   font-weight: 900;
   line-height: 22px;
+  padding: 24px 48px;
+  border: 2px solid #00E3A5;
+  font-size: 18px;
+  padding: 12px 24px;
+}
+.webContainer .New_Header .New_Header-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.webContainer .New_Header .New_Header-box .New_Header-box-left {
+  margin-left: 8%;
+  width: 40%;
+}
+.webContainer .New_Header .New_Header-box .New_Header-box-left h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: white;
+  color: #80AB9E;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+.webContainer .New_Header .New_Header-box .New_Header-box-left h2 {
+  font-size: 52px;
+  color: #f5fbf2;
+  font-weight: 700;
+  margin-bottom: 72px;
+}
+.webContainer .New_Header .New_Header-box .New_Header-box-left button {
+  background-color: #00E3A5;
+  color: none;
+  border-radius: 5px;
+  letter-spacing: 0.05em;
+  font-weight: 900;
+  line-height: 22px;
+  padding: 24px 48px;
+  border: 2px solid #00E3A5;
+  font-size: 18px;
+  border: 1px solid #00E3A5;
+  padding: 24px 48px;
+  border-radius: 5px;
+  font-weight: 600;
+  box-shadow: 0px 12px 20px -3px rgba(0, 227, 166, 0.5);
+}
+.webContainer .New_Header .New_Header-box .New_Header-box-right {
+  width: 55%;
+}
+.webContainer .New_Header .New_Header-box .New_Header-box-right img {
+  display: block;
+  width: 100%;
 }
 .webContainer .baners {
   background-color: #091D18;
@@ -139,6 +199,12 @@ button, a {
   background-color: rgba(0, 0, 0, 0);
   color: white;
   border-radius: 5px;
+  letter-spacing: 0.05em;
+  font-weight: 900;
+  line-height: 22px;
+  padding: 24px 48px;
+  border: 2px solid #00E3A5;
+  font-size: 18px;
   font-size: 18px;
   font-weight: 900;
   padding: 24px 48px;

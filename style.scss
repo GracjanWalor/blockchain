@@ -5,82 +5,132 @@
     font-family: $font-web;
     width: 100%;
     background-color: #0d0d0d;
+    display: flex;
+    flex-direction: column;
 
-    header {
-        display: flex;
-        margin: 0 0 130px 0;
+    .New_Header {
+        background-image: url(./Assets/Header/background-main.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
-        align-items: center;
-        justify-content: space-between;
-        padding: 62px 0 52px 0;
-        background-color: #09251E;
+        
 
-        h1 {
+        header {
             display: flex;
-            width: 35%;
-            font-size: 45px;
-            line-height: 36.4px;
-            color: $color-heading;
-            margin-left: 8%;
-
-            span {
-                color: $color-green;
-            }
-        }
-
-        nav {
-            width: 40%;
-
-            ul {
+            margin: 30px 0 180px 0;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            padding: 62px 0 52px 0;
+            background-color: rgba(9, 37, 30, 0.2);
+            border-radius: 100px;
+    
+            h1 {
                 display: flex;
-                justify-content: space-around;
+                width: 35%;
+                font-size: 45px;
+                line-height: 36.4px;
+                color: $color-heading;
+                margin-left: 8%;
+    
+                span {
+                    color: $color-green;
+                }
+            }
+    
+            nav {
+                width: 40%;
 
-                li {
-                    list-style: none;
-                    position: relative;
-
-                    a {
-                        font-size: 18px;
-                        line-height: 21.09px;
-                        color: $color-heading;
-                    }
-
-                    a:after {
-                        content: '';
-                        width: 0%;
-                        height: 2px;
-                        background-color: $color-green;
-                        position: absolute;
-                        bottom: -8px;
-                        left: 0;
-                        border-radius: 29px;
-                    }
-
-                    a:hover {
-                        color: $color-green;
-                    }
-
-                    a:hover::after {
-                        color: red;
-                        width: 60%;
-                        transition: all 0.3s;
-                        position: absolute;
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+    
+                    li {
+                        list-style: none;
+                        position: relative;
+    
+                        a {
+                            font-size: 18px;
+                            line-height: 21.09px;
+                            color: $color-heading;
+                        }
+    
+                        a:after {
+                            content: '';
+                            width: 0%;
+                            height: 2px;
+                            background-color: $color-green;
+                            position: absolute;
+                            bottom: -8px;
+                            left: 0;
+                            border-radius: 29px;
+                        }
+    
+                        a:hover {
+                            color: $color-green;
+                        }
+    
+                        a:hover::after {
+                            color: red;
+                            width: 60%;
+                            transition: all 0.3s;
+                            position: absolute;
+                        }
                     }
                 }
             }
+    
+            div {
+                width: 15%;
+                margin-left: 5%;
+                margin-right: 8%;
+    
+                button {
+                    @include btn ( transparent, white);
+                    padding: 12px 24px;
+                }
+            }
         }
+        .New_Header-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
 
-        div {
-            width: 15%;
-            margin-left: 5%;
+            .New_Header-box-left {
+                margin-left: 8%;
+                width: 40%;
 
-            button {
-                @include btn (#09251E, white);
-                border: 1px solid $color-green;
-                padding: 24px 45px;
-                font-size: $paragraf-small;
-                font-weight: 900;
-                line-height: 22px;
+                h5 {
+                    @include -h5;
+                    color: $color-paragraf-small;
+                    font-weight: 300;
+                    margin-bottom: 16px;
+                }
+
+                h2 {
+                    font-size: 52px;
+                    color: $color-heading;
+                    font-weight: 700;
+                    margin-bottom: 72px;
+                }
+
+                button {
+                    @include btn ($color-green, none);
+                    border: 1px solid $color-green;
+                    padding: 24px 48px;
+                    border-radius: 5px;
+                    font-weight: 600;
+                    box-shadow: 0px 12px 20px -3px rgba(0, 227, 166, 0.5);
+
+                }
+            }
+            .New_Header-box-right {
+                width: 55%;
+                
+                img {
+                    display: block;
+                    width: 100%;
+                }
             }
         }
     }
