@@ -42,6 +42,12 @@ $borderbottom: 1px;
     background-color: $background-color;
     color: $color;
     border-radius: $borderRadius-button;
+    letter-spacing: 0.05em;
+    font-weight: 900;
+    line-height: 22px;
+    padding: 24px 48px;
+    border: 2px solid $color-green;
+    font-size: $paragraf-small;
 } 
 @mixin -paragraf-about {
     font-size: 22px;
