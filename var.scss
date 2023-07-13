@@ -55,3 +55,9 @@ $borderbottom: 1px;
     font-weight: 300;
     line-height: 34px;
 }
+@mixin -h2 {
+    font-size: 52px;
+    color: $color-heading;
+    font-weight: 700;
+    line-height: 54px;
+}

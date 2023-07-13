@@ -21,6 +21,7 @@ button, a {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  margin-bottom: 100px;
 }
 .webContainer .New_Header header {
   display: flex;
@@ -141,6 +142,57 @@ button, a {
 }
 .webContainer .New_Header .New_Header-box .New_Header-box-right img {
   display: block;
+  width: 100%;
+}
+.webContainer .achievements {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 126px;
+}
+.webContainer .achievements .achievements__body {
+  z-index: 2;
+}
+.webContainer .achievements .achievements__body .achievements__body_headers {
+  text-align: center;
+}
+.webContainer .achievements .achievements__body .achievements__body_headers h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: white;
+  color: #80AB9E;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.webContainer .achievements .achievements__body .achievements__body_headers h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: white;
+  margin-bottom: 50px;
+}
+.webContainer .achievements .achievements__body .achievements__body_containers {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.webContainer .achievements .achievements__body .achievements__body_containers p:nth-child(1) {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  color: #00E3A5;
+}
+.webContainer .achievements .achievements__body .achievements__body_containers p:nth-child(2) {
+  color: #f5fbf2;
+  font-weight: 300;
+}
+.webContainer .achievements .achievements__map-img {
+  margin-top: -75px;
+}
+.webContainer .achievements .achievements__map-img img {
   width: 100%;
 }
 .webContainer .baners {
