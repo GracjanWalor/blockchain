@@ -13,7 +13,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        
+        margin-bottom: 100px;
 
         header {
             display: flex;
@@ -131,6 +131,57 @@
                     display: block;
                     width: 100%;
                 }
+            }
+        }
+    }
+    .achievements {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 126px;
+
+        .achievements__body {
+            z-index: 2;
+
+            .achievements__body_headers {
+                text-align: center;
+
+                h5 {
+                    @include -h5;
+                    color: $color-paragraf-small;
+                    font-weight: 300;
+                    margin-bottom: 10px
+                }
+
+                h2 {
+                    @include -h5;
+                    margin-bottom: 50px;
+                }
+            }
+
+            .achievements__body_containers {
+                display: flex;
+                justify-content: space-evenly;
+                text-align: center;
+
+                p:nth-child(1){
+                    font-size: 36px;  
+                    font-weight: 700;
+                    line-height: 54px;
+                    color: $color-green;
+                }
+                p:nth-child(2) { 
+                    color: $color-heading;
+                    font-weight: 300;
+
+                }
+            } 
+        }
+        .achievements__map-img {
+            margin-top: -75px;
+
+            img {
+                width: 100%;
             }
         }
     }
