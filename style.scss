@@ -410,6 +410,147 @@
             }   
         }      
     }    
+    /* Offerts */
+    .offerts {
+        background-color: #091d1800;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 222px;
+        position: relative;
+        
+
+        h3 {
+            @include -h3;
+            height: 63.64px;
+            margin-top: 100px;
+            z-index: 3;
+        }
+
+        .offerts__one, .offerts__three {
+            background-color: rgba(0, 221, 155, 0.03);
+            border-radius: 150px 0px 0px 150px;
+            height: 220px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 32px;
+            margin-left: 10%;
+            z-index: 3;
+            
+            img:nth-child(1) {
+                margin-left: 10%;
+                margin-right: 10px;
+            }
+
+            div {
+                margin-right: 21%;
+                
+                h5 {
+                    @include -h5;
+                }
+                p {
+                    @include -p-small;
+                }
+            }
+            
+            img:nth-child(3) {
+                margin-right: 29%; 
+            }
+        }
+
+        .offerts__one {
+
+            div {
+                margin-left: 1.5%;
+            }
+        }
+
+        .offerts__three {
+
+            div {
+                margin-right: 22.5%;
+            }
+        }
+        
+        .offerts__two {
+            background-color: rgba(0, 221, 155, 0.03);
+            border-radius: 0px 150px 150px 0px;
+            height: 220px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 32px;
+            margin-right: 8%;
+            z-index: 3;
+
+            img:nth-child(1) {
+                margin-left: 29%;
+            }
+
+            div {
+                margin-left: 19%;
+                text-align: end;
+
+                
+                h5 {
+                    @include -h5;
+                }
+                p {
+                    @include -p-small;
+                }
+            }
+            
+            img:nth-child(3) {
+                margin-right: 14%;  
+                margin-left: 10px
+            }
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+            text-decoration: none;
+
+            button {
+                @include btn(transparent, $color-heading);
+            }
+        }
+
+        .light {
+            position: absolute;
+            background-image:  url(./Assets/Offerts/light1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 280px;
+            z-index: 2;
+            opacity: 0.3;
+            top: 110px;
+        }
+
+        .light_two {
+            position: absolute;
+            background-image:  url(./Assets/Offerts/light2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 400px;
+            z-index: 2;
+            opacity: 0.3;
+            top: 235px;
+        }
+
+        .light_three {
+            position: absolute;
+            background-image:  url(./Assets/Offerts/light1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 300px;
+            z-index: 2;
+            opacity: 0.3;
+            bottom: 180px;
+        }
+    }
     /* Community */
     .community {
         background-image: url(./Assets/Community/main-background\ |\ Community.png);
@@ -526,8 +667,7 @@
                     width: 49.5%;
         
                     h4 {
-                        font-size: $h4-size;
-                        color: $color-heading;
+                        @include -h4;
                         font-weight: 400;
                         line-height: 36px;
                         margin-top: 215px;
@@ -615,11 +755,8 @@
                     width: 49.5%;
         
                     h4 {
-                        font-family: $font-web;
-                        font-weight: 700;
-                        font-size: 32px;
+                        @include -h4;
                         line-height: 48px;
-                        color: $color-heading;
                         margin-top: 124px;
                         margin-bottom: 38px;
         
