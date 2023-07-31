@@ -14,6 +14,7 @@ button, a {
   display: flex;
   flex-direction: column;
   /* About Us */
+  /* Offerts */
   /* Community */
 }
 .webContainer .New_Header {
@@ -401,6 +402,149 @@ button, a {
   left: 572px;
   z-index: 3;
 }
+.webContainer .offerts {
+  background-color: rgba(9, 29, 24, 0);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 222px;
+  position: relative;
+}
+.webContainer .offerts h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: center;
+  color: #f5fbf2;
+  height: 63.64px;
+  margin-top: 100px;
+  z-index: 3;
+}
+.webContainer .offerts .offerts__one, .webContainer .offerts .offerts__three {
+  background-color: rgba(0, 221, 155, 0.03);
+  border-radius: 150px 0px 0px 150px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  margin-left: 10%;
+  z-index: 3;
+}
+.webContainer .offerts .offerts__one img:nth-child(1), .webContainer .offerts .offerts__three img:nth-child(1) {
+  margin-left: 10%;
+  margin-right: 10px;
+}
+.webContainer .offerts .offerts__one div, .webContainer .offerts .offerts__three div {
+  margin-right: 21%;
+}
+.webContainer .offerts .offerts__one div h5, .webContainer .offerts .offerts__three div h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: white;
+}
+.webContainer .offerts .offerts__one div p, .webContainer .offerts .offerts__three div p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #80AB9E;
+}
+.webContainer .offerts .offerts__one img:nth-child(3), .webContainer .offerts .offerts__three img:nth-child(3) {
+  margin-right: 29%;
+}
+.webContainer .offerts .offerts__one div {
+  margin-left: 1.5%;
+}
+.webContainer .offerts .offerts__three div {
+  margin-right: 22.5%;
+}
+.webContainer .offerts .offerts__two {
+  background-color: rgba(0, 221, 155, 0.03);
+  border-radius: 0px 150px 150px 0px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  margin-right: 8%;
+  z-index: 3;
+}
+.webContainer .offerts .offerts__two img:nth-child(1) {
+  margin-left: 29%;
+}
+.webContainer .offerts .offerts__two div {
+  margin-left: 19%;
+  text-align: end;
+}
+.webContainer .offerts .offerts__two div h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: white;
+}
+.webContainer .offerts .offerts__two div p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #80AB9E;
+}
+.webContainer .offerts .offerts__two img:nth-child(3) {
+  margin-right: 14%;
+  margin-left: 10px;
+}
+.webContainer .offerts a {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  text-decoration: none;
+}
+.webContainer .offerts a button {
+  background-color: transparent;
+  color: #f5fbf2;
+  border-radius: 5px;
+  letter-spacing: 0.05em;
+  font-weight: 900;
+  line-height: 22px;
+  padding: 24px 48px;
+  border: 2px solid #00E3A5;
+  font-size: 18px;
+}
+.webContainer .offerts .light {
+  position: absolute;
+  background-image: url(./Assets/Offerts/light1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 280px;
+  z-index: 2;
+  opacity: 0.3;
+  top: 110px;
+}
+.webContainer .offerts .light_two {
+  position: absolute;
+  background-image: url(./Assets/Offerts/light2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  z-index: 2;
+  opacity: 0.3;
+  top: 235px;
+}
+.webContainer .offerts .light_three {
+  position: absolute;
+  background-image: url(./Assets/Offerts/light1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  z-index: 2;
+  opacity: 0.3;
+  bottom: 180px;
+}
 .webContainer .community {
   background-image: url(./Assets/Community/main-background\ |\ Community.png);
   background-repeat: no-repeat;
@@ -503,7 +647,10 @@ button, a {
   width: 49.5%;
 }
 .webContainer footer .background-footer .world-map .footer__left h4 {
+  font-family: "Roboto", sans-serif;
   font-size: 34px;
+  font-weight: 700;
+  line-height: 32px;
   color: #f5fbf2;
   font-weight: 400;
   line-height: 36px;
@@ -584,10 +731,11 @@ button, a {
 }
 .webContainer footer .background-footer .world-map .footer__right h4 {
   font-family: "Roboto", sans-serif;
+  font-size: 34px;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 48px;
+  line-height: 32px;
   color: #f5fbf2;
+  line-height: 48px;
   margin-top: 124px;
   margin-bottom: 38px;
 }

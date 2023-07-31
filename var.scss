@@ -16,12 +16,25 @@ $borderRadius-AboutUs: 15px;
 $borderRadius-button: 5px;
 $borderbottom: 1px;
 // Mixin 
+@mixin -h2 {
+    font-size: 52px;
+    color: $color-heading;
+    font-weight: 700;
+    line-height: 54px;
+}
 @mixin -h3 {
     font-family: $font-web;
     font-size: $h3-size;
     font-weight: 700;
     line-height: 54px;
     text-align: center;
+    color: $color-heading;
+}
+@mixin -h4 {
+    font-family: $font-web;
+    font-size: $h4-size;
+    font-weight: 700;
+    line-height: 32px;
     color: $color-heading;
 }
 @mixin -h5 {
@@ -54,10 +67,4 @@ $borderbottom: 1px;
     color: rgba(189, 243, 255, 1);
     font-weight: 300;
     line-height: 34px;
-}
-@mixin -h2 {
-    font-size: 52px;
-    color: $color-heading;
-    font-weight: 700;
-    line-height: 54px;
 }
