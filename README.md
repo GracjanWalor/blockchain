@@ -1,48 +1,45 @@
-# 🧱 Blockchain – Projekt Frontendowy
+# 🧱 Blockchain – Frontend Project
 
-Prosty frontendowy projekt demonstrujący ideę blockchaina. Zawiera statyczną stronę zbudowaną w **HTML** i wystylizowaną przy użyciu **SCSS**.
+A simple frontend project demonstrating the concept of blockchain. It features a static webpage built with **HTML** and styled using **SCSS**.
 
-## 🛠 Technologie
+## 🛠 Technologies
 
-Projekt korzysta z następujących technologii:
+The project uses the following technologies:
 
-- **HTML5** – semantyczna struktura strony
-- **SCSS (Sass)** – preprocesor CSS, lepsza organizacja stylów
-- **CSS3** – końcowe style użytkownika
-- **Mapy źródłowe (.map)** – ułatwiają debugowanie SCSS
+- **HTML5** – semantic structure of the webpage
+- **SCSS (Sass)** – CSS preprocessor for better style organization
+- **CSS3** – final user-facing styles
+- **Source Maps (.map)** – helps with SCSS debugging
 
- ## 🚀 Jak uruchomić lokalnie
+## 🚀 How to Run Locally
 
-
-1. Sklonuj repozytorium:
+1. Clone the repository:
 
 
    ```bash
    git clone https://github.com/GracjanWalor/blockchain.git
    cd blockchain
 
-2. Otwórz projekt lokalnie
+2. Open the project locally
 
-- Możesz to zrobić na dwa sposoby:
+- You can do it in two ways:
 
-### 🖱️ Metoda 1 – Przeglądarka:
+### 🖱️ Method 1 – Browser:
 
-- Kliknij dwukrotnie na plik index.html, aby otworzyć go w domyślnej przeglądarce.
+- Double-click the `index.html` file to open it in your default browser.
 
-### 🔥 Metoda 2 – Live Server (zalecane w VS Code):
+### 🔥 Method 2 – Live Server (recommended in VS Code):
 
-- Otwórz folder w Visual Studio Code:
-  
+- Open the folder in Visual Studio Code:
+
   ```bash
   code .
 
-- Zainstaluj rozszerzenie Live Server (jeśli jeszcze nie masz).
+- Install the **Live Server** extension (if you haven't already).
 
-- Kliknij prawym przyciskiem myszy na index.html i wybierz **"Open with Live Server"**.
+- Right-click on `index.html` and choose **"Open with Live Server"**.
 
-
-
-## 📸 Podgląd projektu
+## 📸 Project Preview
 
 <img width="1677" alt="Zrzut ekranu 2025-04-11 o 19 07 26 (1)" src="https://github.com/user-attachments/assets/7c5b7d7b-a14e-4a2e-8ae8-7e66622347a3" />
 <img width="1677" alt="Zrzut ekranu 2025-04-11 o 19 07 48" src="https://github.com/user-attachments/assets/e2f50ab7-4b5c-459c-8a67-a495e5542c92" />
@@ -51,7 +48,7 @@ Projekt korzysta z następujących technologii:
 <img width="1677" alt="Zrzut ekranu 2025-04-11 o 19 09 26" src="https://github.com/user-attachments/assets/17257689-2862-4347-b2f0-14a0d5788493" />
 <img width="1677" alt="Zrzut ekranu 2025-04-11 o 19 10 29" src="https://github.com/user-attachments/assets/a17c9da6-f6de-4ca5-9e36-cde07c522c06" />
 
-## 📁 Struktura plików
+## 📁 File Structure
 
 <pre><code>
         📦 blockchain/
@@ -67,11 +64,10 @@ Projekt korzysta z następujących technologii:
 
 
 
+## 🧠 Inspiration
 
+This project was created as a way to learn the basics of blockchain and to practice working with SCSS, organizing CSS files, and designing clean, aesthetic user interfaces.
 
-## 🧠 Inspiracja
-
-Projekt powstał jako forma nauki podstaw blockchaina oraz ćwiczenia pracy z SCSS, organizacją plików CSS i tworzeniem estetycznych interfejsów.
 
 
 
