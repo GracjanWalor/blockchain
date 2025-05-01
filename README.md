@@ -52,14 +52,14 @@ The project uses the following technologies:
 
 <pre><code>
         📦 blockchain/
-        ├── index.html # Główna strona projektu 
-        ├── style.scss # Plik główny SCSS 
-        ├── style.css # Wygenerowany CSS 
-        ├── reset.scss # Reset stylów SCSS 
-        ├── reset.css # Reset stylów CSS 
-        ├── var.scss # Zmienne SCSS (kolory, spacing) 
-        ├── var.css # Zmienne CSS (jeśli wygenerowane) 
-        └── *.map # Mapy źródłowe CSS do debugowania ``` </code></pre>
+        ├── index.html 
+        ├── style.scss 
+        ├── style.css 
+        ├── reset.scss 
+        ├── reset.css 
+        ├── var.scss 
+        ├── var.css 
+        └── *.map ``` </code></pre>
 
 
 
